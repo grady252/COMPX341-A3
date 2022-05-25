@@ -1,3 +1,4 @@
+// Grady McCallum - 1545313
 //
 // In production, we register a service worker to serve assets from local cache.
 
