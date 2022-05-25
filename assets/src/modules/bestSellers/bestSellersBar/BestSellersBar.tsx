@@ -14,7 +14,7 @@ const bestSellers = [burgers, italian, noodles, pancakes, pineapple, umami];
 
 export class BestSellersBar extends React.Component {
   render() {
-    return (
+    return a (
       <div className="center ad-gallery nav">
         <div className="col-md-2 hidden-sm hidden-xs">
           <LinkContainer to="/best">
