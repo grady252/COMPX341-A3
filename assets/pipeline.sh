@@ -1,4 +1,11 @@
+if (($# != 1))
+then
+    echo "Please provide a commit message"
+    exit
+fi
+
 echo "0) Starting pipeline"
+cd assets/
 
 echo "1) Running 'npm install'"
 if npm install; then
@@ -18,7 +25,7 @@ fi
 
 echo "3) Commiting files"
 git add .
-git commit -m "COMPX341-22A-A3 Commiting from CI/CD Pipeline"
+git commit -m "$1"
 git push
 
 echo "4) Starting application"
