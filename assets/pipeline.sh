@@ -4,7 +4,7 @@ echo "1) Running 'npm install'"
 if npm install; then
     echo "'npm install' succeeded"
 else
-    echo "'npm install' failed"
+    echo "'npm install' failed, stopping pipeline"
     exit
 fi
 
@@ -12,7 +12,7 @@ echo "2) Building application"
 if npm run build; then
     echo "Build succeeded"
 else
-    echo "Build failed"
+    echo "Build failed, stopping pipeline"
     exit
 fi
 
