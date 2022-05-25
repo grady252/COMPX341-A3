@@ -16,5 +16,10 @@ else
     exit
 fi
 
-echo "3) Starting application"
+echo "3) Commiting files"
+git add .
+git commit -m "COMPX341-22A-A3 Commiting from CI/CD Pipeline"
+git push
+
+echo "4) Starting application"
 npm run start
